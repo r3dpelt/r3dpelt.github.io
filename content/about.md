@@ -1,3 +1,9 @@
++++
+title = "About"
+tags = ["about"]
+
+ +++
+
 # About
 
 Lorem ipsum

@@ -1,16 +1,11 @@
-# The URL the site will be built for
 base_url = "https://r3dpelt.github.io"
-
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
-
-[markdown]
-
-[markdown.highlighting]
 theme = "anemone"
+output_dir = "public"
 
 [extra]
-# Put all your custom variables here
+header_nav = [
+{url = "/", name_en = "/about" }
+]
+
