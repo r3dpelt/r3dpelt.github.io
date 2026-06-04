@@ -6,6 +6,6 @@ output_dir = "public"
 
 [extra]
 header_nav = [
-{url = "/", name_en = "/about" }
+{url = "/about", name_en = "/about" }
 ]
 
