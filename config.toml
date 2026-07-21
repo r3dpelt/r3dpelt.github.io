@@ -8,7 +8,6 @@ default_language = "en"
 
 [languages.en]
 favicon = "favicon.ico"
-enable_search = true
 
 [extra]
 header_nav = [
