@@ -4,6 +4,11 @@ build_search_index = true
 theme = "anemone"
 output_dir = "public"
 
+
+[languages.en]
+favicon = "favicon.ico"
+enable_search = true
+
 [extra]
 header_nav = [
 {url = "/about", name_en = "/about"},
@@ -11,5 +16,5 @@ header_nav = [
 {url = "/blog", name_en = "/blog"}
 ]
 
-favicon = "favicon.ico"
+
 
