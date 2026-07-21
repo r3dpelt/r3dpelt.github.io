@@ -6,10 +6,8 @@ output_dir = "public"
 default_language = "en"
 
 
-[languages.en]
-favicon = "favicon.ico"
-
 [extra]
+favicon = "favicon.ico"
 header_nav = [
 {url = "/about", name_en = "/about"},
 {url = "/publications", name_en = "/publications"},
