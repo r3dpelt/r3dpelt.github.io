@@ -1,8 +1,8 @@
-+++ 
-title = "Publications" 
++++
+title = "Publications"
 tags = ["publications"]
 
-+++
+ +++
 
 # Publications
 
