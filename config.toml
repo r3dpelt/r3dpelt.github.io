@@ -3,6 +3,7 @@ compile_sass = false
 build_search_index = true
 theme = "anemone"
 output_dir = "public"
+default_language = "en"
 
 
 [languages.en]
