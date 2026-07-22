@@ -13,7 +13,7 @@
 
 # About Me
 
-I am a doctoral researcher at [Umeå University](https://www.umu.se/en/) in the [Software Engineering and Security Group](https://www.umu.se/en/research/groups/software-security-/), supervised by [Prof. Alexandre Bartel](abartel.net). My research focus is on Java deserialization vulnerabilities, including the static analysis for vulnerability detection, fuzzing, reverse engineering, and mitigation techniques. 
+I am a doctoral researcher at [Umeå University](https://www.umu.se/en/) in the [Software Engineering and Security Group](https://www.umu.se/en/research/groups/software-security-/), supervised by [Prof. Alexandre Bartel](abartel.net). My research focus is on Java deserialization vulnerabilities, including static analysis for vulnerability detection, fuzzing, reverse engineering, and mitigation techniques. 
 
 Before starting my doctoral project, I worked as a Security Analyst in the Security Operations Center of the [NOW IT GmbH](https://www.now-it.de/), a major IT service provider of the German federal pension insurance.
 
