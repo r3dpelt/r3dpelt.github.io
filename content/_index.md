@@ -5,9 +5,9 @@
 
 **Security Researcher** 
 
-- [LinkedIn](www.linkedin.com/in/bruno-kreyßig) 
-- [Google Scholar](https://scholar.google.com/citations?user=XMmokisAAAAJ&hl=en)
-- [GitHub](https://github.com/r3dpelt)
+[LinkedIn](www.linkedin.com/in/bruno-kreyßig) | [Google Scholar](https://scholar.google.com/citations?user=XMmokisAAAAJ&hl=en) | [GitHub](https://github.com/r3dpelt)
+
+</br>
 
 # About Me
 
