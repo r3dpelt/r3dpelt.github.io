@@ -1,7 +1,7 @@
 +++
 +++
 
-<img src="/1000008316_2.jpg" width="120" align="left" alt="Profile Picture" title="Profile Picture" style="border-radius: 20px; margin-right: 20px"/>
+<img src="/1000008316_2.jpg" width="120" align="left" alt="Profile Picture" title="Profile Picture" style="border-radius: 60px; margin-right: 20px"/>
 
 *Bruno Kreyssig*
 
