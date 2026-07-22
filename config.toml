@@ -9,7 +9,7 @@ default_language = "en"
 [extra]
 favicon = "favicon.ico"
 header_nav = [
-{url = "/about", name_en = "/about"},
+{url = "/", name_en = "/home"},
 {url = "/publications", name_en = "/publications"},
 {url = "/blog", name_en = "/blog"}
 ]
