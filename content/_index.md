@@ -1,7 +1,7 @@
 +++
 +++
 
-![Test-img](images/favicon.ico)
+![Test-img](/favicon.ico)
 
 # About Me
 
