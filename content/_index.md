@@ -1,7 +1,7 @@
 +++
 +++
 
-<img src="/1000008316_2.jpg" width="120" align="left" alt="Profile Picture" title="Profile Picture" style="border: 1px solid grey; border-radius: 20px"/>
+<img src="/1000008316_2.jpg" width="120" align="left" alt="Profile Picture" title="Profile Picture"/>
 
 **Security Researcher** 
 
