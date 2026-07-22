@@ -1,9 +1,13 @@
 +++
 +++
 
-<img src="/favicon.ico" width="120" align="left" alt="Test" title="Test"/>
+<img src="/1000008316_2.jpg" width="120" align="left" alt="Profile Picture" title="Profile Picture" style="border: 1px solid grey; border-radius: 20px"/>
 
-Lorem ipsum ...
+**Security Researcher** 
+
+[LinkedIn](www.linkedin.com/in/bruno-kreyßig) | [Google Scholar](https://scholar.google.com/citations?user=XMmokisAAAAJ&hl=en) | [GitHub](https://github.com/r3dpelt)
 
 # About Me
+
+
 
