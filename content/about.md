@@ -4,7 +4,7 @@ tags = ["about"]
 
  +++
 
-![Test-img](favicon.ico)
+![Test-img](static/favicon.ico)
 
 # About Me
 
