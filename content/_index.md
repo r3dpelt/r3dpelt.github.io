@@ -17,5 +17,7 @@ I am a doctoral researcher at [Umeå University](https://www.umu.se/en/) in the 
 
 Before starting my doctoral project, I worked as a Security Analyst in the Security Operations Center of the [NOW IT GmbH](https://www.now-it.de/), a major IT service provider of the German federal pension insurance.
 
+Outside of work, I am an amateur photgrapher, fitness enthusiast, and boardgame & MTG geek.
+
 
 
