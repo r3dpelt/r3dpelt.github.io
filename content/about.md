@@ -4,10 +4,7 @@ tags = ["about"]
 
  +++
 
-# About
+![Test-img](favicon.ico)
 
-Lorem ipsum
+# About Me
 
-```java
-System.out.println("hello world")
-```
