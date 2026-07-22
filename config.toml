@@ -11,7 +11,7 @@ favicon = "favicon.ico"
 header_nav = [
 {url = "/", name_en = "/home"},
 {url = "/publications", name_en = "/publications"},
-{url = "/blog", name_en = "/blog"}
+{url = "/writeups", name_en = "/writeups"}
 ]
 
 
