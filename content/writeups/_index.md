@@ -1,4 +1,6 @@
 +++
+title = "Writeups"
+
 +++
 
 ## Own Machines
