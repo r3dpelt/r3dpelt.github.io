@@ -4,6 +4,17 @@ tags = ["CV"]
 
 +++
 
+## Skills
+
+- 💻 **Programming and DevOps:** Python, Java, C/C++, x86 Assembly, Git, Docker, VMWare Workstation, JetBrains IDEs, VSCode 
+- 🚀 **LLM and Agentic:** LangChain, LangGraph, ChromaDB, Ollama, Pydantic, MCP
+- 🗡 **Offensive Tools:** Kali Linux, BurpSuite, Nmap, GoBuster, ffuf
+- 🛡 **Defensive Tools:** Tenable.sc, Nessus, Splunk SIEM
+- 🔬 **Reverse Engineering:** gdb/gef, Procmon, Process Explorer, PEStudio, Flare VM, SootUp, JQF, ASM, JADX
+
+- **📝 Technical Writing / Documentation:** Latex, Markdown, Microsoft Office
+- **Languages:** 🇩🇪 German (*Native/C2*), 🇬🇧 English (*Professional/C2*), 🇸🇪 Swedish (*Intermediate/B1*)
+
 ## Work Experience
 
 **Security Analyst** · Nord Ost West Informationstechnick GmbH <br>
