@@ -10,9 +10,10 @@ default_language = "en"
 favicon = "favicon.ico"
 header_nav = [
 {url = "/", name_en = "/home"},
+{url = "/cv", name_en= "/cv"},
 {url = "/publications", name_en = "/publications"},
-{url = "/writeups", name_en = "/writeups"},
-{url = "/cv", name_en= "/cv"}
+{url = "/writeups", name_en = "/writeups"}
+
 ]
 
 
