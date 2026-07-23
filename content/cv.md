@@ -26,12 +26,12 @@ Leipzig, Germany · *Oct '21 – Present*
 
 ---
 
-**Visiting Researcher Scholar** · University of British Columbia <br>
+**Visiting Research Scholar** · University of British Columbia <br>
 Vancouver, BC, Canada · *Feb '26 - May '26*
 
 ---
 
-**Visiting Researcher Scholar** · University of Wisconsin <br>
+**Visiting Research Scholar** · University of Wisconsin <br>
 Madison, WI, USA · *Oct '24 - Dec '24*
 
 ---
@@ -43,7 +43,7 @@ Leipzig, Germany · *Sep '18 – Sep '21*
 
 ## Education
 
-**PhD Software Security** · Umeå University <br>
+**Ph.D. Software Security** · Umeå University <br>
 Umeå, Sweden · *Oct '23 – Present*
 
 ---
