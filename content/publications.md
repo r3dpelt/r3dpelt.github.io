@@ -16,7 +16,7 @@ tags = ["publications"]
 - 📃 Sabine Houy, **Bruno Kreyssig**, Timothée Riom, Alexandre Bartel, and Patrick McDaniel. [SoK: A Practical Guideline and Taxonomy to LLVM's Control Flow Integrity](https://doi.org/10.1109/SecDev66745.2025.00024). In Proceedings of the 2025 IEEE Secure Development Conference (SecDev).
 - 📃 Timothée Riom, Sabine Houy, **Bruno Kreyssig**, and Alexandre Bartel. [Evaluating the Maintainability of Forward-Porting Vulnerabilities in Fuzzer Benchmarks](https://doi.org/10.1109/ICSME64153.2025.00011). In Proceedings of the 2025 IEEE International Conference on Software Maintenance and Evolution (ICSME). 
 - 📃 **Bruno Kreyssig**, Timothée Riom, Sabine Houy, Alexandre Bartel, and Patrick McDaniel. [Deserialization Gadget Chains are not a Pathological Problem in Android:an In-Depth Study of Java Gadget Chains in AOSP](https://doi.org/10.48550/arXiv.2502.08447). ArXiv Preprint.
-- 📃 **Bruno Kreyssig**, and Alexandre Bartel. 2025. [Gleipner: A Benchmark for Gadget Chain Detection in Java Deserialization Vulnerabilities](https://doi.org/10.1145/3715711). In Proceedings of the ACM Foundations of Software Engineering (FSE) 2025.
+- 📃 **Bruno Kreyssig**, and Alexandre Bartel. 2025. [Gleipner: A Benchmark for Gadget Chain Detection in Java Deserialization Vulnerabilities](https://doi.org/10.1145/3715711). In Proceedings of the ACM Foundations of Software Engineering (FSE) 2025. *Distinguished Paper Award 🎖*
 
 ## 2024
 
