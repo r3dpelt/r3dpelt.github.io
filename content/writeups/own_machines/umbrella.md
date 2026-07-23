@@ -4,8 +4,6 @@ tags = ["Writeup", "THM"]
 
 +++
 
-# Official Writeup - Umbrella
-
 > Disclaimer: This is a [port](https://github.com/brunofight/ContainerSecurity/blob/main/Writeups/umbrella.md) from my old GitHub account. 
 
 ## Introduction
