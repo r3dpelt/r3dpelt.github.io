@@ -177,4 +177,4 @@ All that remains is to invoke the bash with the ``-p`` option, thereby not chang
 
 And now we have root and can simply pick up the remaining flag.
 
-![root shell](Images/bash2.png)
+![root shell](https://raw.githubusercontent.com/brunofight/ContainerSecurity/refs/heads/main/Writeups/Images/bash2.png)
