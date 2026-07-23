@@ -1,6 +1,7 @@
 +++
-title = "writeups"
+title = "Writeups"
 tags = ["writeups"]
 
 +++
+
 
