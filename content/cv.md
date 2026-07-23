@@ -12,8 +12,10 @@ tags = ["CV"]
 - 🛡 **Defensive Tools:** Tenable.sc, Nessus, Splunk SIEM
 - 🔬 **Reverse Engineering:** gdb/gef, Procmon, Process Explorer, PEStudio, Flare VM, SootUp, JQF, ASM, JADX
 
-- **📝 Technical Writing / Documentation:** Latex, Markdown, Microsoft Office
-- **Languages:** 🇩🇪 German (*Native/C2*), 🇬🇧 English (*Professional/C2*), 🇸🇪 Swedish (*Intermediate/B1*)
+---
+
+- 📝 **Technical Writing / Documentation:** Latex, Markdown, Microsoft Office
+- 🗣 **Languages:** 🇩🇪 German (*Native/C2*), 🇬🇧 English (*Professional/C2*), 🇸🇪 Swedish (*Intermediate/B1*)
 
 ## Work Experience
 
