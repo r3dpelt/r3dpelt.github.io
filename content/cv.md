@@ -24,6 +24,7 @@ Madison, WI, USA · *Oct '24 - Dec '24*
 **Coop Student** · Nord Ost West Informationstechnick GmbH <br>
 Leipzig, Germany · *Sep '18 – Sep '21*
 
+<br>
 
 ## Education
 
@@ -42,12 +43,16 @@ Leipzig, Germany · *Oct '18 - Sep '21*
 
 ---
 
+<br>
+
 ## Certificates
 
 - **IBM RAG and Agentic AI** (2026), [Certificate](https://www.coursera.org/account/accomplishments/professional-cert/certificate/SAE9FAP5D4ZP).
 - **Offensive Security Certified Professional** (2024), [Certificate](https://www.credential.net/b5bc3be4-98e8-4c47-b94d-1e6d17de382b).
 - **eJPTv2, eLearnSecurity Junior Penetration Tester** (2023).
 - **Tenable.sc Specialist** (2022).
+
+<br>
 
 ## Professional Service
 
