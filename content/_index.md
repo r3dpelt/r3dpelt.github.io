@@ -19,7 +19,7 @@ Before starting my doctoral project, I worked as a Security Analyst in the Secur
 
 Outside of work, I am an amateur photgrapher, fitness enthusiast, and boardgame & MTG geek.
 
-# Why the Name?
+## Why the Name?
 
 Redpelt is one of the main characters in my alltime favorite Warhammer 40k book [Battle of the Fang](https://wh40k.lexicanum.com/wiki/Battle_of_the_Fang). He is one of the space wolves who survives the siege on the Fang.
 
