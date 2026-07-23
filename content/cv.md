@@ -41,8 +41,6 @@ Leipzig, Germany · *Oct '21 – Sep '23*
 **B.Sc. Computer Science** · Staatliche Studienakademie Leipzig <br>
 Leipzig, Germany · *Oct '18 - Sep '21*
 
----
-
 <br>
 
 ## Certificates
