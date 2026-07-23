@@ -1,6 +1,6 @@
 +++
-Title = "Umbrella - Official WriteUp"
-Tags = ["Writeup", "THM"]
+title = "Umbrella - Official WriteUp"
+tags = ["Writeup", "THM"]
 
 +++
 
