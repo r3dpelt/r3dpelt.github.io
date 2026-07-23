@@ -17,6 +17,8 @@ tags = ["CV"]
 - 📝 **Technical Writing / Documentation:** Latex, Markdown, Microsoft Office
 - 🗣 **Languages:** 🇩🇪 German (*Native/C2*), 🇬🇧 English (*Professional/C2*), 🇸🇪 Swedish (*Intermediate/B1*)
 
+<br>
+
 ## Work Experience
 
 **Security Analyst** · Nord Ost West Informationstechnick GmbH <br>
