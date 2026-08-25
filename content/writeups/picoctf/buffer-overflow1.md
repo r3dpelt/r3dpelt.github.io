@@ -76,7 +76,7 @@ disas vuln
 
 We set a breakpoint directly after the ``gets()`` call (``<vuln>+34``) with ``b *vuln+34``. Then, we run and input 32 ``A``'s, so we can also see the buffer dimension. At the breakpoint, we inspect the first 80 bytes in memory from stack the stack pointer (``$esp``).
 
-![Stack View](images/picoctf_bufferoverflow.png)
+![Stack View](/images/picoctf/picoctf_bufferoverflow.png)
 
 Notice the little endianness. 
 
@@ -105,7 +105,7 @@ conn.close()
 
 And receive the flag:
 
-![Flag](images/picoctf_bufferoverflow_flag.png)
+![Flag](/images/picoctf/picoctf_bufferoverflow_flag.png)
 
 
 
