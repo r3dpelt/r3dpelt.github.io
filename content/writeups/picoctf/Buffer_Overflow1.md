@@ -1,8 +1,7 @@
-+++ 
++++
 title = "Low Level Binary Intro - Buffer Overflow 1"
 
 +++
-
 
 This writeup is for the final challenge in the PicoCTF Low Level Binary Intro series:
 
