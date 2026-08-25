@@ -23,7 +23,7 @@ Writeups for the labs in [Practical Malware Analysis](https://www.amazon.com/Pra
 
 ### Binary Exploitation
 
-- 💀 [PicoCTF Buffer Overflow 1](./picoctf/Buffer_Overflow1)
+- 💀 [PicoCTF Buffer Overflow 1](./picoctf/buffer-overflow1)
 
 
 ## Own Labs
