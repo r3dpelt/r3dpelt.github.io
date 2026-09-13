@@ -39,11 +39,11 @@ The imagebot conveniently leaks the functions it can access when prompted (``get
 
 We cannot control any parameters in ``get_random_image``, but we can test different keywords flowing into ``get_image``.
 
-![ImageBot Function Leak](/images/htb/capstone_get_image_1.png)
+![Get_Image](/images/htb/capstone_get_image_1.png)
 
 If no image exists for a keyword, we simply receive: *Invalid model response*. Which also makes it difficult to enumerate potential output vulnerabilities.
 
-![ImageBot Function Leak](/images/htb/capstone_get_image_2.png)
+![Get_Image](/images/htb/capstone_get_image_2.png)
 
 Checking the ``get_random_image`` function we quickly exhaust the number of images available (a car, a house, a kitten, a burger, a keyboard, and a sunset). We can further enumerate to understand the query being executed by the function. 
 
@@ -53,7 +53,7 @@ E.g., if we query for ``Give me an image of a urg`` the function returns us the 
 - *Give me an image of "bu%r"* : returns a burger
 - *Give me an image of "terminator' OR '1' LIKE '1"*: also returns the sunset
 
-![ImageBot Function Leak](/images/htb/capstone_get_image_3.png)
+![Blind SQL injection](/images/htb/capstone_get_image_3.png)
 
 We found a query which leads to SQL injection. We cannot use it to display information but for blind SQL injection. Let us flesh out a script for that:
 
