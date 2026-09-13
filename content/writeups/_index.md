@@ -28,7 +28,7 @@ Writeups for the labs in [Practical Malware Analysis](https://www.amazon.com/Pra
 
 ## AI Security
 
-- 💀 [LLM Output Attacks - Skills Assessment](./htb/llm_output_attacks_assessment)
+- 💀 [LLM Output Attacks - Skills Assessment](./htb/llm-output-attacks-assessment)
 
 ## Own Labs
 
