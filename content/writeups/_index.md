@@ -26,6 +26,10 @@ Writeups for the labs in [Practical Malware Analysis](https://www.amazon.com/Pra
 - 💀 [PicoCTF Buffer Overflow 1](./picoctf/buffer-overflow1)
 
 
+## AI Security
+
+- 💀 [LLM Output Attacks - Skills Assessment](./htb/llm_output_attacks_assessment)
+
 ## Own Labs
 
 Official Writeups for machines I created:
