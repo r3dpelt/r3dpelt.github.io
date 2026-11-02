@@ -6,6 +6,7 @@ tags = ["publications"]
 
 ## 2026
 
+- 📃 Hantang Zhang, Mojtaba Eshghie, **Bruno Kreyssig**, Tommy Löfstedt, and Alexandre Bartel. [Loom: A Balanced String-Based Transformer for Android Malware Detection](https://doi.org/10.1007/978-981-92-6843-6_17). In Proceedings of the 28th International Conference on Information and Communications Security (ICICS '26).
 - 📃 Sabine Houy, **Bruno Kreyssig**, and Alexandre Bartel. [CFIghter: Automated Control-Flow Integrity Enablement and Evaluation for Legacy C/C++ Systems](https://doi.org/10.1145/3805773.3805994). In Proceedings of the 2026 ACM Secure Development Conference (SecDev '26).
 - 📰 **Bruno Kreyssig** and Alexandre Bartel. [Serving a Buffet of Deserialization Gadgets - Clojure CVE-2017-20189, CVE-2024-22871 and More](https://connect.ed-diamond.com/misc/misc-145/un-buffet-de-gadgets-de-deserialisation-clojure-cve-2017-20189-cve-2024-22871-et-plus-encore). In Multi-System & Internet Security Cookbook (MISC).
 - 📃 **Bruno Kreyssig**, Sabine Houy, Hantang Zhang, Timothée Riom, and Alexandre Bartel. [GadgetBuilder: An Overhaul of the Greatest Java Deserialization Exploitation Tool](https://doi.org/10.1007/978-3-032-14782-0_11). In Secure IT Systems. NordSec 2025.
